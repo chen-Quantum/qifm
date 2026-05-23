@@ -1,0 +1,2124 @@
+{
+  "elapsed_seconds": 662.9642150402069,
+  "n_experiments": 24,
+  "seeds": [
+    0,
+    1
+  ],
+  "results": [
+    {
+      "name": "01_xor_2d_low_data",
+      "dataset": "xor_2d",
+      "n_classes": 2,
+      "n_train": 20,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.84375,
+          "qifm_f1": 0.8398398398398399,
+          "qifm_cross_entropy": 0.40019794823197596,
+          "qifm_train_time": 9.962466716766357,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.65,
+              "test_acc": 0.53125,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.75,
+              "test_acc": 0.71875,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.9,
+              "test_acc": 0.875,
+              "n_params": 55
+            },
+            "rff": {
+              "train_acc": 0.9,
+              "test_acc": 0.78125,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.71875,
+          "qifm_f1": 0.718475073313783,
+          "qifm_cross_entropy": 2.580867686594652,
+          "qifm_train_time": 9.880566120147705,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.7,
+              "test_acc": 0.46875,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 1.0,
+              "test_acc": 0.84375,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 1.0,
+              "test_acc": 0.84375,
+              "n_params": 40
+            },
+            "rff": {
+              "train_acc": 0.95,
+              "test_acc": 0.75,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "02_xor_4d_parity",
+      "dataset": "parity_4d",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.9375,
+          "qifm_f1": 0.9333333333333333,
+          "qifm_cross_entropy": 1.727464628742456,
+          "qifm_train_time": 16.309566020965576,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.65625,
+              "test_acc": 0.625,
+              "n_params": 5
+            },
+            "mlp": {
+              "train_acc": 0.65625,
+              "test_acc": 0.625,
+              "n_params": 25
+            },
+            "rbf_svm": {
+              "train_acc": 0.78125,
+              "test_acc": 0.71875,
+              "n_params": 146
+            },
+            "rff": {
+              "train_acc": 0.96875,
+              "test_acc": 0.8125,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.875,
+          "qifm_f1": 0.875,
+          "qifm_cross_entropy": 1.8197282934795345,
+          "qifm_train_time": 15.829805135726929,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.65625,
+              "test_acc": 0.46875,
+              "n_params": 5
+            },
+            "mlp": {
+              "train_acc": 0.5625,
+              "test_acc": 0.59375,
+              "n_params": 25
+            },
+            "rbf_svm": {
+              "train_acc": 0.90625,
+              "test_acc": 0.6875,
+              "n_params": 121
+            },
+            "rff": {
+              "train_acc": 0.96875,
+              "test_acc": 0.78125,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "03_two_moons_20",
+      "dataset": "two_moons",
+      "n_classes": 2,
+      "n_train": 20,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.75,
+          "qifm_f1": 0.75,
+          "qifm_cross_entropy": 2.197329520827178,
+          "qifm_train_time": 10.132398843765259,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.85,
+              "test_acc": 0.8125,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.75,
+              "test_acc": 0.84375,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.95,
+              "test_acc": 0.90625,
+              "n_params": 43
+            },
+            "rff": {
+              "train_acc": 0.9,
+              "test_acc": 0.84375,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.90625,
+          "qifm_f1": 0.906158357771261,
+          "qifm_cross_entropy": 0.474293084328317,
+          "qifm_train_time": 9.892127990722656,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.9,
+              "test_acc": 0.875,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.9,
+              "test_acc": 0.875,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 1.0,
+              "test_acc": 0.875,
+              "n_params": 37
+            },
+            "rff": {
+              "train_acc": 0.9,
+              "test_acc": 0.8125,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "04_two_moons_100",
+      "dataset": "two_moons",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 1.0,
+          "qifm_f1": 1.0,
+          "qifm_cross_entropy": 0.01311563551454857,
+          "qifm_train_time": 15.727092981338501,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.84375,
+              "test_acc": 0.90625,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.875,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.875,
+              "test_acc": 0.96875,
+              "n_params": 55
+            },
+            "rff": {
+              "train_acc": 0.9375,
+              "test_acc": 0.96875,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.90625,
+          "qifm_f1": 0.906158357771261,
+          "qifm_cross_entropy": 0.9869216609930782,
+          "qifm_train_time": 15.724935293197632,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.9375,
+              "test_acc": 0.875,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.9375,
+              "test_acc": 0.875,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.96875,
+              "test_acc": 0.875,
+              "n_params": 49
+            },
+            "rff": {
+              "train_acc": 0.9375,
+              "test_acc": 0.75,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "05_circles",
+      "dataset": "circles",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.78125,
+          "qifm_f1": 0.7793103448275862,
+          "qifm_cross_entropy": 1.2800529330846477,
+          "qifm_train_time": 15.640066146850586,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.6875,
+              "test_acc": 0.625,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.46875,
+              "test_acc": 0.5,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 1.0,
+              "test_acc": 1.0,
+              "n_params": 55
+            },
+            "rff": {
+              "train_acc": 0.9375,
+              "test_acc": 0.90625,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.65625,
+          "qifm_f1": 0.6532019704433498,
+          "qifm_cross_entropy": 0.5094660448899511,
+          "qifm_train_time": 15.665303230285645,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.71875,
+              "test_acc": 0.5625,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.75,
+              "test_acc": 0.625,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 1.0,
+              "test_acc": 1.0,
+              "n_params": 58
+            },
+            "rff": {
+              "train_acc": 0.96875,
+              "test_acc": 0.96875,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "06_spiral",
+      "dataset": "spiral",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.5625,
+          "qifm_f1": 0.45893719806763283,
+          "qifm_cross_entropy": 1.0255244433966528,
+          "qifm_train_time": 15.74868392944336,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.6875,
+              "test_acc": 0.4375,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.4375,
+              "test_acc": 0.34375,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.84375,
+              "test_acc": 0.5,
+              "n_params": 76
+            },
+            "rff": {
+              "train_acc": 0.8125,
+              "test_acc": 0.5625,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.65625,
+          "qifm_f1": 0.6532019704433498,
+          "qifm_cross_entropy": 1.1088423638833054,
+          "qifm_train_time": 15.662216901779175,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.625,
+              "test_acc": 0.65625,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.71875,
+              "test_acc": 0.5,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.75,
+              "test_acc": 0.65625,
+              "n_params": 91
+            },
+            "rff": {
+              "train_acc": 0.75,
+              "test_acc": 0.71875,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "07_checkerboard",
+      "dataset": "checkerboard",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.71875,
+          "qifm_f1": 0.7046153846153846,
+          "qifm_cross_entropy": 0.895065883358511,
+          "qifm_train_time": 15.783131837844849,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.71875,
+              "test_acc": 0.65625,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.6875,
+              "test_acc": 0.625,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.75,
+              "test_acc": 0.65625,
+              "n_params": 76
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.71875,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.53125,
+          "qifm_f1": 0.530791788856305,
+          "qifm_cross_entropy": 2.129185372249489,
+          "qifm_train_time": 15.700030088424683,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.59375,
+              "test_acc": 0.625,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.53125,
+              "test_acc": 0.59375,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.75,
+              "test_acc": 0.59375,
+              "n_params": 91
+            },
+            "rff": {
+              "train_acc": 0.6875,
+              "test_acc": 0.59375,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "08_gaussian_mixture",
+      "dataset": "gaussian_mixture",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 1.0,
+          "qifm_f1": 1.0,
+          "qifm_cross_entropy": 1.2846486299276955e-06,
+          "qifm_train_time": 13.718974828720093,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.875,
+              "test_acc": 0.65625,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.90625,
+              "test_acc": 0.65625,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 1.0,
+              "test_acc": 1.0,
+              "n_params": 31
+            },
+            "rff": {
+              "train_acc": 1.0,
+              "test_acc": 1.0,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 1.0,
+          "qifm_f1": 1.0,
+          "qifm_cross_entropy": 0.00010791187341661112,
+          "qifm_train_time": 11.727499008178711,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.8125,
+              "test_acc": 0.75,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 1.0,
+              "test_acc": 1.0,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 1.0,
+              "test_acc": 1.0,
+              "n_params": 28
+            },
+            "rff": {
+              "train_acc": 1.0,
+              "test_acc": 1.0,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "09_fourier_labels",
+      "dataset": "fourier_labels",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.5,
+          "qifm_f1": 0.4980392156862745,
+          "qifm_cross_entropy": 0.9932581817723221,
+          "qifm_train_time": 15.936740159988403,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.625,
+              "test_acc": 0.5,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.59375,
+              "test_acc": 0.5,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.65625,
+              "test_acc": 0.53125,
+              "n_params": 88
+            },
+            "rff": {
+              "train_acc": 0.71875,
+              "test_acc": 0.5,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.5625,
+          "qifm_f1": 0.45893719806763283,
+          "qifm_cross_entropy": 1.2600001897214774,
+          "qifm_train_time": 15.646014928817749,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.59375,
+              "test_acc": 0.625,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.625,
+              "test_acc": 0.59375,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.6875,
+              "test_acc": 0.625,
+              "n_params": 94
+            },
+            "rff": {
+              "train_acc": 0.625,
+              "test_acc": 0.625,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "10_sparse_signal",
+      "error": "matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 8 is different from 4)",
+      "per_seed": []
+    },
+    {
+      "name": "11_qifm_phase_only",
+      "dataset": "two_moons",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "phase",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "Phase encoding only.",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.96875,
+          "qifm_f1": 0.9687194525904204,
+          "qifm_cross_entropy": 0.06313695667808589,
+          "qifm_train_time": 14.275382041931152,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.875,
+              "test_acc": 0.9375,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.78125,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.875,
+              "test_acc": 0.9375,
+              "n_params": 58
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.96875,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 1.0,
+          "qifm_f1": 1.0,
+          "qifm_cross_entropy": 0.05461107060231265,
+          "qifm_train_time": 14.575313091278076,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.84375,
+              "test_acc": 0.8125,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.90625,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.90625,
+              "test_acc": 1.0,
+              "n_params": 52
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.84375,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "12_qifm_amp_only",
+      "dataset": "two_moons",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "amplitude",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "Amplitude encoding only.",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.96875,
+          "qifm_f1": 0.9687194525904204,
+          "qifm_cross_entropy": 0.13857056209766366,
+          "qifm_train_time": 12.497731924057007,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.875,
+              "test_acc": 0.9375,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.78125,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.875,
+              "test_acc": 0.9375,
+              "n_params": 58
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.96875,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.96875,
+          "qifm_f1": 0.9671794871794872,
+          "qifm_cross_entropy": 0.30555047935758656,
+          "qifm_train_time": 12.477473974227905,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.84375,
+              "test_acc": 0.8125,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.90625,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.90625,
+              "test_acc": 1.0,
+              "n_params": 52
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.84375,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "13_qifm_hybrid_enc",
+      "dataset": "two_moons",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "Hybrid amplitude-phase encoding.",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.96875,
+          "qifm_f1": 0.9687194525904204,
+          "qifm_cross_entropy": 0.21970197837567357,
+          "qifm_train_time": 16.61445903778076,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.875,
+              "test_acc": 0.9375,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.78125,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.875,
+              "test_acc": 0.9375,
+              "n_params": 58
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.96875,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.75,
+          "qifm_f1": 0.75,
+          "qifm_cross_entropy": 0.4942496840273295,
+          "qifm_train_time": 15.968982934951782,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.84375,
+              "test_acc": 0.8125,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.90625,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.90625,
+              "test_acc": 1.0,
+              "n_params": 52
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.84375,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "14_qifm_no_hopping",
+      "dataset": "checkerboard",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 28,
+      "notes": "No hopping terms in basis.",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.75,
+          "qifm_f1": 0.7408906882591093,
+          "qifm_cross_entropy": 3.6726657909395124,
+          "qifm_train_time": 14.006388902664185,
+          "qifm_n_params": 28,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.71875,
+              "test_acc": 0.65625,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.6875,
+              "test_acc": 0.625,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.75,
+              "test_acc": 0.65625,
+              "n_params": 76
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.71875,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.59375,
+          "qifm_f1": 0.5933528836754643,
+          "qifm_cross_entropy": 0.9605101546912707,
+          "qifm_train_time": 14.016587018966675,
+          "qifm_n_params": 28,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.59375,
+              "test_acc": 0.625,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.53125,
+              "test_acc": 0.59375,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.75,
+              "test_acc": 0.59375,
+              "n_params": 91
+            },
+            "rff": {
+              "train_acc": 0.6875,
+              "test_acc": 0.59375,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "15_qifm_no_entanglement",
+      "dataset": "two_moons",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 30,
+      "notes": "No graph Laplacian / entangling terms.",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.875,
+          "qifm_f1": 0.8745098039215686,
+          "qifm_cross_entropy": 0.9649490220039718,
+          "qifm_train_time": 15.04688572883606,
+          "qifm_n_params": 30,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.875,
+              "test_acc": 0.9375,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.78125,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.875,
+              "test_acc": 0.9375,
+              "n_params": 58
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.96875,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.96875,
+          "qifm_f1": 0.9671794871794872,
+          "qifm_cross_entropy": 0.19385532714353323,
+          "qifm_train_time": 15.06486201286316,
+          "qifm_n_params": 30,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.84375,
+              "test_acc": 0.8125,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.90625,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.90625,
+              "test_acc": 1.0,
+              "n_params": 52
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.84375,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "16_qifm_with_data_potential",
+      "dataset": "two_moons",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "Data-modulated Hamiltonian.",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.96875,
+          "qifm_f1": 0.9687194525904204,
+          "qifm_cross_entropy": 0.21970197837567357,
+          "qifm_train_time": 16.68220806121826,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.875,
+              "test_acc": 0.9375,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.78125,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.875,
+              "test_acc": 0.9375,
+              "n_params": 58
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.96875,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.75,
+          "qifm_f1": 0.75,
+          "qifm_cross_entropy": 0.4942496840273295,
+          "qifm_train_time": 16.034117937088013,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.84375,
+              "test_acc": 0.8125,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.90625,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.90625,
+              "test_acc": 1.0,
+              "n_params": 52
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.84375,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "17_qifm_fixed_projectors",
+      "dataset": "two_moons",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": false,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 15,
+      "notes": "Fixed basis-partition projectors.",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.84375,
+          "qifm_f1": 0.8423645320197044,
+          "qifm_cross_entropy": 0.3802495662756161,
+          "qifm_train_time": 7.413188219070435,
+          "qifm_n_params": 15,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.875,
+              "test_acc": 0.9375,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.78125,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.875,
+              "test_acc": 0.9375,
+              "n_params": 58
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.96875,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.84375,
+          "qifm_f1": 0.8423645320197044,
+          "qifm_cross_entropy": 0.25523179142091196,
+          "qifm_train_time": 7.473225116729736,
+          "qifm_n_params": 15,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.84375,
+              "test_acc": 0.8125,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.90625,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.90625,
+              "test_acc": 1.0,
+              "n_params": 52
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.84375,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "18_qifm_trainable_observables",
+      "dataset": "two_moons",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "Trainable observable basis.",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.96875,
+          "qifm_f1": 0.9687194525904204,
+          "qifm_cross_entropy": 0.21970197837567357,
+          "qifm_train_time": 16.59408402442932,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.875,
+              "test_acc": 0.9375,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.78125,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.875,
+              "test_acc": 0.9375,
+              "n_params": 58
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.96875,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.75,
+          "qifm_f1": 0.75,
+          "qifm_cross_entropy": 0.4942496840273295,
+          "qifm_train_time": 16.021172046661377,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.84375,
+              "test_acc": 0.8125,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.90625,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.90625,
+              "test_acc": 1.0,
+              "n_params": 52
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.84375,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "19_qifm_vs_tiny_mlp",
+      "dataset": "two_moons",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "QIFM vs a 4-hidden MLP.",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.96875,
+          "qifm_f1": 0.9687194525904204,
+          "qifm_cross_entropy": 0.21970197837567357,
+          "qifm_train_time": 16.573238849639893,
+          "qifm_n_params": 31,
+          "baselines": {
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.78125,
+              "n_params": 17
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.75,
+          "qifm_f1": 0.75,
+          "qifm_cross_entropy": 0.4942496840273295,
+          "qifm_train_time": 15.949450016021729,
+          "qifm_n_params": 31,
+          "baselines": {
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.90625,
+              "n_params": 17
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "20_qifm_vs_rbf_rff",
+      "dataset": "circles",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "QIFM vs RBF SVM and RFF.",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.78125,
+          "qifm_f1": 0.7793103448275862,
+          "qifm_cross_entropy": 1.2800529330846477,
+          "qifm_train_time": 15.590814113616943,
+          "qifm_n_params": 31,
+          "baselines": {
+            "rbf_svm": {
+              "train_acc": 1.0,
+              "test_acc": 1.0,
+              "n_params": 55
+            },
+            "rff": {
+              "train_acc": 0.9375,
+              "test_acc": 0.90625,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.65625,
+          "qifm_f1": 0.6532019704433498,
+          "qifm_cross_entropy": 0.5094660448899511,
+          "qifm_train_time": 15.684595108032227,
+          "qifm_n_params": 31,
+          "baselines": {
+            "rbf_svm": {
+              "train_acc": 1.0,
+              "test_acc": 1.0,
+              "n_params": 58
+            },
+            "rff": {
+              "train_acc": 0.96875,
+              "test_acc": 0.96875,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "21_noise_robustness",
+      "dataset": "two_moons",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.78125,
+          "qifm_f1": 0.7810361681329423,
+          "qifm_cross_entropy": 0.5937268038705041,
+          "qifm_train_time": 15.593929052352905,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.875,
+              "test_acc": 0.875,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.8125,
+              "test_acc": 0.71875,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.875,
+              "test_acc": 0.90625,
+              "n_params": 61
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.90625,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.84375,
+          "qifm_f1": 0.8398398398398399,
+          "qifm_cross_entropy": 0.4849049996654988,
+          "qifm_train_time": 15.67322325706482,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.8125,
+              "test_acc": 0.78125,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.78125,
+              "test_acc": 0.90625,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.875,
+              "test_acc": 0.875,
+              "n_params": 61
+            },
+            "rff": {
+              "train_acc": 0.84375,
+              "test_acc": 0.75,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "22_low_data_sweep",
+      "dataset": "circles",
+      "n_classes": 2,
+      "n_train": 16,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.90625,
+          "qifm_f1": 0.9039039039039038,
+          "qifm_cross_entropy": 0.70128323654399,
+          "qifm_train_time": 7.916591167449951,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.4375,
+              "test_acc": 0.3125,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.5,
+              "test_acc": 0.375,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 1.0,
+              "test_acc": 1.0,
+              "n_params": 40
+            },
+            "rff": {
+              "train_acc": 1.0,
+              "test_acc": 0.75,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.84375,
+          "qifm_f1": 0.8358974358974359,
+          "qifm_cross_entropy": 0.34872479638096227,
+          "qifm_train_time": 7.950421094894409,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.75,
+              "test_acc": 0.59375,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.8125,
+              "test_acc": 0.65625,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 1.0,
+              "test_acc": 0.96875,
+              "n_params": 34
+            },
+            "rff": {
+              "train_acc": 0.9375,
+              "test_acc": 0.75,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "23_param_count_sweep",
+      "dataset": "two_moons",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 30,
+      "notes": "N=4 small-parameter QIFM.",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.875,
+          "qifm_f1": 0.8745098039215686,
+          "qifm_cross_entropy": 0.9649490220039718,
+          "qifm_train_time": 16.601626873016357,
+          "qifm_n_params": 30,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.875,
+              "test_acc": 0.9375,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.78125,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.875,
+              "test_acc": 0.9375,
+              "n_params": 58
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.96875,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.96875,
+          "qifm_f1": 0.9671794871794872,
+          "qifm_cross_entropy": 0.19385532714353323,
+          "qifm_train_time": 16.24312114715576,
+          "qifm_n_params": 30,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.84375,
+              "test_acc": 0.8125,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.84375,
+              "test_acc": 0.90625,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.90625,
+              "test_acc": 1.0,
+              "n_params": 52
+            },
+            "rff": {
+              "train_acc": 0.875,
+              "test_acc": 0.84375,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "24_more_iterations",
+      "dataset": "spiral",
+      "n_classes": 2,
+      "n_train": 32,
+      "n_test": 32,
+      "qifm_config": {
+        "N": 4,
+        "families": [
+          "local_potential",
+          "hopping",
+          "graph_laplacian"
+        ],
+        "encoding": "hybrid",
+        "n_times": 3,
+        "t_max": 1.4,
+        "use_data_potential": true,
+        "use_trainable_projectors": true,
+        "alpha": 0.5,
+        "projector_rank": 2,
+        "n_classes": 2,
+        "seed": 29618189,
+        "max_iter": 60,
+        "use_finite_diff": true
+      },
+      "qifm_n_params": 31,
+      "notes": "Longer training (max_iter=150).",
+      "seeds": [
+        0,
+        1
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "qifm_test_acc": 0.5625,
+          "qifm_f1": 0.45893719806763283,
+          "qifm_cross_entropy": 1.0255244433966528,
+          "qifm_train_time": 17.595802783966064,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.6875,
+              "test_acc": 0.4375,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.4375,
+              "test_acc": 0.34375,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.84375,
+              "test_acc": 0.5,
+              "n_params": 76
+            },
+            "rff": {
+              "train_acc": 0.8125,
+              "test_acc": 0.5625,
+              "n_params": 97
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "qifm_test_acc": 0.65625,
+          "qifm_f1": 0.6532019704433498,
+          "qifm_cross_entropy": 1.1088423638833054,
+          "qifm_train_time": 16.816869735717773,
+          "qifm_n_params": 31,
+          "baselines": {
+            "logreg": {
+              "train_acc": 0.625,
+              "test_acc": 0.65625,
+              "n_params": 3
+            },
+            "mlp": {
+              "train_acc": 0.71875,
+              "test_acc": 0.5,
+              "n_params": 17
+            },
+            "rbf_svm": {
+              "train_acc": 0.75,
+              "test_acc": 0.65625,
+              "n_params": 91
+            },
+            "rff": {
+              "train_acc": 0.75,
+              "test_acc": 0.71875,
+              "n_params": 97
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
