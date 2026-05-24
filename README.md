@@ -1,7 +1,5 @@
 # QIFM: Quantum Interference Field Machine
 
-![QIFM hero](outputs/release_media/readme_hero.png)
-
 > A simulator-based research prototype of a model that replaces the
 > layers / neurons / activations stack of a neural network with continuous-
 > time Hamiltonian dynamics on a small complex Hilbert space, multi-time
@@ -9,10 +7,10 @@
 > trainable parameters live in the Hamiltonian and in a trainable
 > observable basis.
 >
-> We measure a **matched-budget quantum signal** — performance against
+> As an **exploratory comparison**, we measure performance against
 > classical baselines (logistic regression, tiny MLP, RBF SVM, random
 > Fourier features) at equal data and parameter budgets. We make **no
-> claim of true quantum advantage.**
+> claim of quantum advantage.**
 
 ## Abstract
 
@@ -34,10 +32,6 @@ Given an input $x \in \mathbb{R}^d$:
 
 All continuous parameters $(\theta, w, V, \alpha)$ are trained jointly by
 cross-entropy minimisation with L-BFGS-B.
-
-## Pipeline
-
-![Pipeline overview](outputs/release_media/pipeline_overview.png)
 
 ## Why this is not a standard neural network
 
@@ -126,24 +120,12 @@ Numerical results land in `outputs/experiments/all_metrics.csv`,
 `outputs/experiments/bootstrap_summary.csv`, and
 `outputs/experiments/per_experiment_plots/`.
 
-## Matched-budget quantum signal
+## Matched-budget comparison
 
 For each experiment we compute the difference between QIFM's mean
 accuracy and the best classical baseline's mean accuracy on the same
-split. A positive number means QIFM beats the best classical baseline at
-matched data and parameter budget.
-
-![QIFM vs baselines](outputs/release_media/qifm_vs_baselines.png)
-![Ablation summary](outputs/release_media/ablation_summary.png)
-
-## Sample animation
-
-![Interference flow](outputs/release_media/interference_flow.gif)
-
-The 12-snapshot animation tracks $|\psi(t_k)|^2$ over the basis as the
-state evolves under a trained Hamiltonian. The full cinematic summary
-lives at `outputs/release_media/cinematic_summary.mp4` and
-`outputs/release_media/cinematic_summary.gif`.
+split. A positive number means QIFM exceeds the best classical baseline
+on that split at matched data and parameter budget (exploratory only).
 
 ## Limitations
 
@@ -163,7 +145,7 @@ lives at `outputs/release_media/cinematic_summary.mp4` and
 
 ## Honesty note
 
-We do **not** claim a true quantum advantage. The signal we report is a
+We do **not** claim any quantum advantage. The signal we report is a
 matched-budget performance difference on a controlled simulator-based
 benchmark. A real-world claim requires a problem class where no efficient
 classical algorithm is known, an honest accounting of shot noise and
